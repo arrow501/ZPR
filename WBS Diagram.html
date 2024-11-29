@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .wbs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .root {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .root-node {
+            background: #4a90e2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        
+        .connector {
+            width: 2px;
+            height: 40px;
+            background: #666;
+            margin: 0 auto;
+        }
+        
+        .main-branches {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1400px;
+        }
+        
+        .branch {
+            flex: 1;
+            min-width: 180px;
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .branch-head {
+            background: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        
+        .leaf-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .leaf-item {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .leaf-item:hover {
+            background: #e9ecef;
+        }
+
+        .id {
+            font-weight: bold;
+            color: #4a90e2;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wbs-container">
+        <div class="root">
+            <div class="root-node">Projekt FoundIt</div>
+            <div class="connector"></div>
+        </div>
+        
+        <div class="main-branches">
+            <div class="branch">
+                <div class="branch-head">1. Analiza</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">1.1</span>Analiza wymagań funkcjonalnych</div>
+                    <div class="leaf-item"><span class="id">1.2</span>Analiza wymagań niefunkcjonalnych</div>
+                    <div class="leaf-item"><span class="id">1.3</span>Modelowanie danych</div>
+                    <div class="leaf-item"><span class="id">1.4</span>Analiza ryzyk</div>
+                    <div class="leaf-item"><span class="id">1.5</span>Dokumentacja wyników analizy</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">2. Projektowanie</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">2.1</span>Architektura Rozwiązania</div>
+                    <div class="leaf-item"><span class="id">2.2</span>Procesy Biznesowe</div>
+                    <div class="leaf-item"><span class="id">2.3</span>Interfejs Użytkownika</div>
+                    <div class="leaf-item"><span class="id">2.4</span>Standardy i Dokumentacja</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">3. Budowa</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">3.1</span>Alpha</div>
+                    <div class="leaf-item"><span class="id">3.2</span>Beta</div>
+                    <div class="leaf-item"><span class="id">3.3</span>Produkcja</div>
+                    <div class="leaf-item"><span class="id">3.4</span>System Dokumentacji</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">4. Testy</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">4.1</span>Testy systemowe</div>
+                    <div class="leaf-item"><span class="id">4.2</span>Testy bezpieczeństwa</div>
+                    <div class="leaf-item"><span class="id">4.3</span>Testy akceptacyjne</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">5. Wdrażanie</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">5.1</span>Przygotowanie środowiska produkcyjnego</div>
+                    <div class="leaf-item"><span class="id">5.2</span>Migracja danych</div>
+                    <div class="leaf-item"><span class="id">5.3</span>Wdrożenie aplikacji</div>
+                    <div class="leaf-item"><span class="id">5.4</span>Szkolenie użytkowników i wsparcie techniczne</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">6. Marketing</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">6.1</span>Strategie marketingowe</div>
+                    <div class="leaf-item"><span class="id">6.2</span>Kampanie promocyjne</div>
+                </div>
+            </div>
+            
+            <div class="branch">
+                <div class="branch-head">7. Eksploatacja</div>
+                <div class="leaf-list">
+                    <div class="leaf-item"><span class="id">7.1</span>Zarządzanie systemem</div>
+                    <div class="leaf-item"><span class="id">7.2</span>Obsługa użytkownika</div>
+                    <div class="leaf-item"><span class="id">7.3</span>Bezpieczeństwo operacyjne</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
