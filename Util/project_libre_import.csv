@@ -1,0 +1,5 @@
+ID,OutlineNumber,Name,Level,Duration,Start,Finish,Predecessors
+1,1,ANALIZA,1,1d,,,
+2,1.1,Analiza wymagań funkcjonalnych,2,1d,,,
+3,1.1.1,Analiza procesów zgłaszania zgub,3,1d,,,
+4,1.1.2,Analiza procesów zgłaszania znalezisk,3,1d,,,
