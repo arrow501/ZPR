@@ -6,7 +6,7 @@ def parse_markdown_wbs(text):
     tasks = []
     current_id = 1
 
-    # Split into lines and process each one
+    # Split into lines and process each line
     lines = text.split('\n')
     for line in lines:
         line = line.strip()
@@ -14,7 +14,7 @@ def parse_markdown_wbs(text):
             continue
 
         # Count the heading level by number of # symbols
-        heading_match = re.match(r'^(#{1,4})\s*', line)
+        heading_match = re.match(r'^(#{1,5})\s*', line)
         if heading_match:
             level = len(heading_match.group(1))
 
@@ -32,20 +32,18 @@ def parse_markdown_wbs(text):
             else:
                 task_number = ''
 
-            # Create task dictionary
-            task = {
-                'ID': current_id,
-                'OutlineNumber': task_number,
-                'Name': task_name,
-                'Level': level,
-                'Duration': '1d',  # Default duration
-                'Start': '',  # These can be set in ProjectLibre
-                'Finish': '',
-                'Predecessors': ''
-            }
-
-            tasks.append(task)
-            current_id += 1
+            if task_name:  # Only add if there's actually a task name
+                tasks.append({
+                    'ID': current_id,
+                    'OutlineNumber': task_number,
+                    'Name': task_name,
+                    'Level': level,
+                    'Duration': '1d',
+                    'Start': '',
+                    'Finish': '',
+                    'Predecessors': ''
+                })
+                current_id += 1
 
     return tasks
 
@@ -58,25 +56,23 @@ def write_project_libre_csv(tasks, output_file):
         writer.writerows(tasks)
 
 
-def convert_markdown_wbs_to_csv(input_text, output_file):
-    """
-    Main function to convert markdown WBS to ProjectLibre CSV format
+# Main execution
+if __name__ == "__main__":
+    try:
+        # Read the input file
+        with open('wbs.md', 'r', encoding='utf-8') as file:
+            content = file.read()
 
-    Args:
-        input_text (str): The markdown WBS content
-        output_file (str): Path to save the CSV file
-    """
-    tasks = parse_markdown_wbs(input_text)
-    write_project_libre_csv(tasks, output_file)
-    return len(tasks)  # Return number of tasks processed
+        # Parse and convert
+        tasks = parse_markdown_wbs(content)
 
+        # Write the output
+        write_project_libre_csv(tasks, 'project_libre_import.csv')
 
-# Example usage
-sample_text = """# **1. ANALIZA** {#1.-analiza}
-## **1.1. Analiza wymagań funkcjonalnych** {#1.1.-analiza-wymagań-funkcjonalnych}
-### **1.1.1. Analiza procesów zgłaszania zgub**
-### **1.1.2. Analiza procesów zgłaszania znalezisk**"""
+        print(f"Successfully processed {len(tasks)} tasks")
+        print("Output saved to project_libre_import.csv")
 
-# Process the sample
-num_tasks = convert_markdown_wbs_to_csv(sample_text, 'project_libre_import.csv')
-print(f"Processed {num_tasks} tasks successfully")
+    except FileNotFoundError:
+        print("Error: Could not find wbs.md file in the current directory")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
