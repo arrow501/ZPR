@@ -420,7 +420,9 @@
 
 ### 	**5.2.2. Automatyczny backup**
 
-##### 	**5.2.2.1. Test przywrócenia automatycznego backupu**
+#### **5.2.2.1. Konfiguracja automatycznego Backupu**
+
+##### 	**5.2.2.2. Test przywrócenia automatycznego backupu**
 
 ## **5.3. Wdrożenie aplikacji** {#5.3.-wdrożenie-aplikacji}
 
@@ -446,25 +448,19 @@
 
 ## **6.1. Strategie marketingowe** {#6.1.-strategie-marketingowe}
 
-### **6.1.1. Analiza rynku i konkurencji**
+### **6.1.1. Planowanie kampanii reklamowych**
 
-#### **6.1.1.1. Badanie potrzeb klientów**
+#### **6.1.1.1. Wyznaczenie celów kampanii**
 
-#### **6.1.1.2. Analiza konkurencyjnych produktów/usług**
+#### **6.1.1.2. Wybór kanałów marketingowych**
 
-### **6.1.2. Planowanie kampanii reklamowych**
+#### **6.1.1.3. Opracowanie harmonogramu działań**
 
-#### **6.1.2.1. Wyznaczenie celów kampanii**
+### **6.1.2. Budżetowanie marketingowe**
 
-#### **6.1.2.2. Wybór kanałów marketingowych**
+#### **6.1.2.1. Przydzielenie środków na działania promocyjne**
 
-#### **6.1.2.3. Opracowanie harmonogramu działań**
-
-### **6.1.3. Budżetowanie marketingowe**
-
-#### **6.1.3.1. Przydzielenie środków na działania promocyjne**
-
-#### **6.1.3.2. Monitorowanie wykorzystania budżetu**
+#### **6.1.2.2. Monitorowanie wykorzystania budżetu**
 
 ## **6.2. Kampanie promocyjne** {#6.2.-kampanie-promocyjne}
 
