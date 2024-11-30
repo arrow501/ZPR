@@ -1,0 +1,229 @@
+ID,Name,Duration
+1,1. ANALIZA,1d
+2,1.1. Analiza wymagań funkcjonalnych,1d
+3,1.1.1. Analiza procesów zgłaszania zgub,1d
+4,1.1.2. Analiza procesów zgłaszania znalezisk,1d
+5,1.1.3. Analiza procesów matchowania przedmiotów,1d
+6,1.1.4. Analiza procesów logistycznych,1d
+7,1.1.4.1. Nadanie przesyłki,1d
+8,1.1.4.2. Śledzenie przesyłek,1d
+9,1.1.4.3. Potwierdzenie odbioru,1d
+10,1.1.5. Analiza procesów płatności,1d
+11,1.1.5.1. Obsługa escrow,1d
+12,1.1.5.2. Rozliczenie wysyłek,1d
+13,1.1.5.3. Obsługa reklamacji,1d
+14,1.2. Analiza wymagań niefunkcjonalnych,1d
+15,1.2.1. Wymagania wydajnościowe,1d
+16,1.2.1.1. Obciążenie serwera,1d
+17,1.2.1.2. Obsługa równoczesnych użytkowników,1d
+18,1.2.2. Wymagania bezpieczeństwa,1d
+19,1.2.2.1. Ochrona danych użytkowników,1d
+20,1.2.2.2. Odporność na ataki (np. SQL Injection),1d
+21,1.2.2.3. Zgodność z RODO,1d
+22,1.2.3. Wymagania integracji API,1d
+23,1.2.3.1. Płatności i escrow,1d
+24,1.2.3.2. Geolokalizacja,1d
+25,1.2.3.3. API InPost,1d
+26,1.3. Modelowanie danych,1d
+27,1.3.1. Analiza struktury bazy danych,1d
+28,1.3.1.1. Projekt tabel zgłoszeń,1d
+29,1.3.1.2. Projekt tabel użytkowników,1d
+30,1.3.1.3. Projekt tabel logistycznych,1d
+31,1.3.2. Specyfikacja przepływu danych między systemami,1d
+32,1.3.2.1. Przepływ zgłoszenia od użytkownika do bazy,1d
+33,1.3.2.2. Integracja danych z API InPost i geolokalizacji,1d
+34,1.3.2.3. Obsługa danych płatności w escrow,1d
+35,1.4. Analiza ryzyk,1d
+36,"1.4.1. Identyfikacja potencjalnych zagrożeń (np. błędy integracji, niewydolność systemu)",1d
+37,1.4.2. Ocena wpływu ryzyk na funkcjonalność,1d
+38,1.4.3. Plan minimalizacji ryzyk,1d
+39,1.5. Dokumentacja wyników analizy,1d
+40,1.5.1. Raport wymagań funkcjonalnych,1d
+41,1.5.2. Raport wymagań niefunkcjonalnych,1d
+42,1.5.3. Dokumentacja modelu danych,1d
+43,1.5.4. Dokumentacja planu zarządzania ryzykiem,1d
+44,2. PROJEKTOWANIE,1d
+45,2.1. Architektura Rozwiązania,1d
+46,2.1.1. Architektura Systemu,1d
+47,2.1.1.1. Diagram architektury,1d
+48,2.1.1.2. Diagram przepływu danych,1d
+49,2.1.1.3. Schemat bazy danych,1d
+50,2.1.1.4. Architektura systemu escrow,1d
+51,2.1.2. Plan Integracji,1d
+52,2.1.2.1. Specyfikacja API płatności i escrow,1d
+53,2.1.2.2. Specyfikacja API InPost,1d
+54,2.1.2.3. Specyfikacja geolokalizacji,1d
+55,2.2. Procesy Biznesowe,1d
+56,2.2.1. Proces Główny,1d
+57,2.2.1.1. Proces zgłaszania zgub,1d
+58,2.2.1.2. Proces zgłaszania znalezisk,1d
+59,2.2.1.3. Proces matchowania,1d
+60,2.2.2. Proces Logistyczny,1d
+61,2.2.2.1. Nadanie przesyłki (z API InPost albo w ich apce),1d
+62,2.2.2.2. Śledzenie przesyłki (generowanie linków do InPost),1d
+63,2.2.2.3. Potwierdzenie odbioru (z API InPost),1d
+64,2.2.3. Proces Płatności,1d
+65,2.2.3.1. Wypłata znaleźnego poprzez escrow,1d
+66,2.2.3.2. Rozliczenie wysyłki,1d
+67,2.2.3.3. Obsługa reklamacji płatności,1d
+68,2.3. Interfejs Użytkownika,1d
+69,2.3.1. Makiety Główne,1d
+70,2.3.1.1. Rejestracja/logowanie,1d
+71,2.3.1.2. Zgłaszanie przedmiotów,1d
+72,2.3.1.3. Lista dopasowań,1d
+73,2.3.2. Makiety Procesów,1d
+74,2.3.2.1. Proces wysyłki,1d
+75,2.3.2.2. Proces płatności i escrow,1d
+76,2.4. Standardy i Dokumentacja,1d
+77,2.4.1. Standardy Nazewnictwa,1d
+78,2.4.1.1. Opracowanie słownika projektowego i terminologii,1d
+79,2.4.1.2. Projekt konwencji nazewnictwa dla systemu,1d
+80,2.4.2. Standardy Dokumentacji Technicznej,1d
+81,2.4.2.1. Projekt szablonów dokumentacji,1d
+82,2.4.2.2. Specyfikacja wymagań dla systemu dokumentacji,1d
+83,2.4.3. Specyfikacja API,1d
+84,2.4.3.1. Projekt standardów dokumentacji API,1d
+85,2.4.3.2. Specyfikacja systemu wersjonowania,1d
+86,2.4.3.3. Skrypt tworzący środowisko testowe API,1d
+87,3. BUDOWA,1d
+88,3.1. Alpha,1d
+89,3.1.1. Podstawowe Funkcje,1d
+90,3.1.1.1. Rejestracja użytkownika,1d
+91,3.1.1.2. Zgłaszanie przedmiotów,1d
+92,3.1.1.3. Podstawowy matching,1d
+93,3.1.2. Działające Demo *Minimal Viable Product*,1d
+94,3.1.2.1. Formularze zgłoszeń,1d
+95,3.1.2.2. Widok dopasowań,1d
+96,3.1.2.3. Profil użytkownika,1d
+97,3.2. Beta,1d
+98,3.2.1. Weryfikacja,1d
+99,3.2.1.1. System weryfikacji tożsamości,1d
+100,3.2.1.2. System ocen,1d
+101,3.2.1.3. System zabezpieczenia transakcji escrow,1d
+102,3.2.2. Rozszerzony Matching,1d
+103,3.2.2.1. Geolokalizacja,1d
+104,3.2.2.2. Zaawansowane filtry,1d
+105,3.2.2.3. System powiadomień,1d
+106,3.3. Produkcja,1d
+107,3.3.1. Integracje,1d
+108,3.3.1.1. Integracja płatności,1d
+109,3.3.1.2. Integracja InPost,1d
+110,3.3.1.3. Integracja map,1d
+111,3.3.2. System Logistyczny,1d
+112,3.3.2.1. Generowanie listów przewozowych,1d
+113,3.3.2.2. Śledzenie przesyłek,1d
+114,3.4. System Dokumentacji,1d
+115,3.4.1. Implementacja Podstawowa,1d
+116,3.4.1.1. Wdrożenie systemu dokumentacji kodu,1d
+117,3.4.1.2. Implementacja portalu dokumentacji,1d
+118,3.4.2. Dokumentacja API,1d
+119,3.4.2.1. Implementacja dokumentacji API Inpost,1d
+120,3.4.2.2. Stworzenie dokumentacji API Providera płatności i escrow,1d
+121,3.4.3. Narzędzia Dokumentacji,1d
+122,3.4.3.1. System zarządzania wersjami dokumentacji,1d
+123,3.4.3.2. Implementacja walidatorów nazewnictwa,1d
+124,4. Testy,1d
+125,4.1. Testy systemowe,1d
+126,4.1.1. Testowanie funkcjonalności aplikacji,1d
+127,4.1.1.1. Zgłaszanie zgubionych przedmiotów,1d
+128,4.1.1.2. Zgłaszanie znalezionych przedmiotów,1d
+129,4.1.1.3. Rejestracja użytkownika,1d
+130,4.1.1.4. Zgłaszanie przedmiotów,1d
+131,4.1.1.5. Podstawowy matching,1d
+132,4.1.2. Testowanie integracji API,1d
+133,4.1.2.1. API płatności i escrow,1d
+134,4.1.2.2. API InPost,1d
+135,4.1.2.3. API geolokalizacji,1d
+136,4.1.3. Testy wydajnościowe,1d
+137,4.1.3.1. Obciążenie serwera,1d
+138,4.1.3.2. Obsługa wielu użytkowników,1d
+139,4.1.3.3. Wydajność systemu powiadomień,1d
+140,4.2. Testy bezpieczeństwa,1d
+141,4.2.1. Testy ochrony danych użytkownika,1d
+142,4.2.2. Testy odporności na ataki (np. SQL Injection),1d
+143,4.2.3. Weryfikacja zgodności z RODO,1d
+144,4.2.4. Testy bezpieczeństwa płatności,1d
+145,4.3. Testy akceptacyjne,1d
+146,4.3.1. Weryfikacja zgodności z wymaganiami biznesowymi,1d
+147,4.3.2. Testy z udziałem grupy testowej (feedback użytkowników),1d
+148,5. Wdrażanie,1d
+149,5.1. Przygotowanie środowiska produkcyjnego,1d
+150,5.1.1. Konfiguracja serwerów,1d
+151,5.1.1.1. Ustawienie serwerów w chmurze,1d
+152,5.1.1.2. Instalacja systemów operacyjnych,1d
+153,5.1.1.3. Konfiguracja Dockera,1d
+154,5.1.2. Wdrożenie bazy danych,1d
+155,5.1.2.1. Ustawienie bazy danych,1d
+156,5.1.2.2. Konfiguracja środowiska bazy danych,1d
+157,5.1.2.3. Instalacja oprogramowania i bibliotek,1d
+158,5.1.3. Zabezpieczenia środowiska,1d
+159,5.1.3.1. Konfiguracja szyfrowania bazy danych,1d
+160,5.1.3.2. Konfiguracja dostępu,1d
+161,5.1.3.3. Wdrożenie alertów dotyczących bezpieczeństwa,1d
+162,5.2. Migracja danych,1d
+163,5.2.1. Import danych testowych,1d
+164,5.2.1.1. Weryfikacja integralności danych,1d
+165,5.2.2. Automatyczny backup,1d
+166,5.2.2.1. Test przywrócenia automatycznego backupu,1d
+167,5.3. Wdrożenie aplikacji,1d
+168,5.3.1. Przeniesienie aplikacji na serwer produkcyjny,1d
+169,5.3.1.1. Autostart środowiska,1d
+170,5.3.1.2. Audyt pusha pod zawartość kluczy api,1d
+171,5.3.1.1. Weryfikacja uprawnień,1d
+172,5.3.2. Weryfikacja połączeń API,1d
+173,5.4. Szkolenie użytkowników i wsparcie techniczne,1d
+174,5.4.1. Przygotowanie dokumentacji użytkownika,1d
+175,5.4.2. Szkolenie zespołu wsparcia technicznego,1d
+176,5.4.3. Uruchomienie kanałów wsparcia dla użytkowników końcowych,1d
+177,6. MARKETING,1d
+178,6.1. Strategie marketingowe,1d
+179,6.1.1. Analiza rynku i konkurencji,1d
+180,6.1.1.1. Badanie potrzeb klientów,1d
+181,6.1.1.2. Analiza konkurencyjnych produktów/usług,1d
+182,6.1.2. Planowanie kampanii reklamowych,1d
+183,6.1.2.1. Wyznaczenie celów kampanii,1d
+184,6.1.2.2. Wybór kanałów marketingowych,1d
+185,6.1.2.3. Opracowanie harmonogramu działań,1d
+186,6.1.3. Budżetowanie marketingowe,1d
+187,6.1.3.1. Przydzielenie środków na działania promocyjne,1d
+188,6.1.3.2. Monitorowanie wykorzystania budżetu,1d
+189,6.2. Kampanie promocyjne,1d
+190,6.2.1. Tworzenie materiałów,1d
+191,6.2.1.1. Projektowanie materiałów wizualnych,1d
+192,6.2.1.2. Przygotowanie treści tekstowych,1d
+193,6.2.2. Realizacja kampanii,1d
+194,6.2.2.1. Publikacja w social media,1d
+195,6.2.2.2. E-mail marketing,1d
+196,6.2.2.3. Płatne kampanie reklamowe,1d
+197,6.2.2.4. Monitorowanie wyników i optymalizacja,1d
+198,7. EKSPLOATACJA,1d
+199,7.1. Zarządzanie systemem,1d
+200,7.1.1. Utrzymanie infrastruktury,1d
+201,7.1.1.1. Monitoring działania systemu,1d
+202,7.1.1.2. Instalowanie aktualizacji i łatek,1d
+203,7.1.2. Automatyzacja procesów,1d
+204,7.1.2.1. Konfiguracja automatycznych kopii zapasowych,1d
+205,7.1.2.2. Usprawnianie procesów operacyjnych,1d
+206,7.1.3. Zarządzanie dostępem,1d
+207,7.1.3.1. Tworzenie kont użytkowników,1d
+208,7.1.3.2. Zarządzanie uprawnieniami i rolami,1d
+209,*7.1.4.* *Opłaty cykliczne*,1d
+210,7.1.4.1. Opłaty za Serwery/Chmury,1d
+211,7.1.4.2. Opłaty za licencje,1d
+212,7.2. Obsługa użytkownika,1d
+213,7.2.1. Wsparcie techniczne,1d
+214,7.2.1.1. Rozwiązywanie problemów zgłaszanych przez użytkowników,1d
+215,7.2.1.2. Udzielanie informacji i szkoleń,1d
+216,7.2.2. Obsługa zgłoszeń,1d
+217,7.2.2.1. Rejestracja zgłoszeń serwisowych,1d
+218,7.2.2.2. Zarządzanie reklamacjami,1d
+219,7.2.3. Dokumentacja,1d
+220,7.2.3.1. Aktualizacja instrukcji użytkownika,1d
+221,7.2.3.2. Publikacja FAQ na stronie pomocy,1d
+222,7.3. Bezpieczeństwo operacyjne,1d
+223,7.3.1. Monitorowanie zagrożeń,1d
+224,7.3.1.1. Analiza logów systemowych,1d
+225,7.3.1.2. Identyfikacja potencjalnych zagrożeń,1d
+226,7.3.2. Zabezpieczenia systemu,1d
+227,7.3.2.1. Implementacja narzędzi ochronnych,1d
+228,7.3.2.2. Aktualizacja polityki bezpieczeństwa,1d
