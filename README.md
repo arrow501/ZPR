@@ -1,7 +1,7 @@
 # 📱 FoundIt - Projekt Systemu Odnajdywania Zagubionych Przedmiotów
 ![LOGO](https://github.com/user-attachments/assets/2b937e51-c162-4834-a7a6-b6e4ab8e9454)
 
-> **Uwaga**: Ten projekt został stworzony jako część zaliczenia przedmiotu "Planowanie Projektów Informatycznych" na Polsko-Japońskiej Akademii Technik Komputerowych. Przedstawiona dokumentacja ma charakter edukacyjny i demonstracyjny.
+> **Uwaga**: Ten projekt został stworzony jako część zaliczenia przedmiotu "Zarządzanie Projektem Informatycznym" na Polsko-Japońskiej Akademii Technik Komputerowych. Przedstawiona dokumentacja ma charakter edukacyjny i demonstracyjny.
 
 ## 📋 O Projekcie
 
@@ -96,6 +96,6 @@ Pytania dotyczące projektu można kierować przez system zgłoszeń GitHub.
 
 ---
 
-> **Nota końcowa**: Projekt został przygotowany w ramach przedmiotu "Planowanie Projektów Informatycznych" na PJATK. Wszystkie zawarte w nim dane, metryki i założenia mają charakter edukacyjny i zostały stworzone na potrzeby zajęć. Przedstawiona dokumentacja nie reprezentuje rzeczywistego produktu.
+> **Nota końcowa**: Projekt został przygotowany w ramach przedmiotu "Zarządzanie Projektem Informatycznym" na PJATK. Wszystkie zawarte w nim dane, metryki i założenia mają charakter edukacyjny i zostały stworzone na potrzeby zajęć. Przedstawiona dokumentacja nie reprezentuje rzeczywistego produktu.
 
 *Ostatnia aktualizacja: Listopad 2024*
