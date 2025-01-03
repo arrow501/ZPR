@@ -87,7 +87,7 @@ const MapView = () => {
         <div className={`relative h-[calc(100vh-180px)]`}>
           {/* Background map image */}
           <img
-            src="/map.png"
+            src="/map_dark.png"
             alt="Map"
             className="w-full h-full object-cover"
           />
