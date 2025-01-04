@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- Hourglass Icon -->
+  <path d="M25 15
+           L55 15
+           C55 15, 45 40, 40 50
+           C35 40, 25 15, 25 15
+           
+           M25 85
+           L55 85
+           C55 85, 45 60, 40 50
+           C35 60, 25 85, 25 85
+           Z" 
+        fill="none" 
+        stroke="#2D3748" 
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+  
+  <!-- Company Name -->
+  <text x="75" y="53" 
+        font-family="'Helvetica Neue', sans-serif" 
+        font-weight="500" 
+        font-size="32" 
+        letter-spacing="2"
+        fill="#2D3748">
+    WCAS
+  </text>
+  
+  <!-- Subtext with increased contrast -->
+  <text x="75" y="73" 
+        font-family="'Helvetica Neue', sans-serif" 
+        font-weight="400" 
+        font-size="16" 
+        letter-spacing="1"
+        fill="#4A5568">
+    DEVELOPMENT
+  </text>
+</svg>
