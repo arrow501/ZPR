@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import MapView from "./MapView";
 import ItemRegistrationForm from "./ItemRegistrationForm";
+import ChatInterface from "./ChatInterface"; // Add this import
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
           >
             Report Item
           </Link>
+          <Link
+            to="/chat"
+            className="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+          >
+            Chat
+          </Link>
         </div>
       </div>
     ),
@@ -36,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/report",
     element: <ItemRegistrationForm />,
+  },
+  {
+    path: "/chat",
+    element: <ChatInterface />,
   },
 ]);
 
